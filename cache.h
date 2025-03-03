@@ -1,14 +1,14 @@
 #ifndef CACHE_H
 #define CACHE_H
 
-#include "rod_cut.h"  // Ensure rod_cut.h is included first
+#include "rod_cut.h"
 
 #define MAX_CACHE_SIZE 100
 
 typedef struct {
     int rod_length;
     int best_value;
-    int cut_counts[MAX_CUT_OPTIONS];  // Now properly defined
+    int cut_counts[MAX_CUT_OPTIONS];
 } CacheEntry;
 
 typedef struct {

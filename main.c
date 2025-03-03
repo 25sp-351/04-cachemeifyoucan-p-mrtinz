@@ -15,13 +15,13 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    Cache cache;                // Fix: Declare a cache object
-    initialize_cache(&cache);   // Fix: Initialize the cache
+    Cache cache;
+    initialize_cache(&cache);
 
     int rod_length;
     while (printf("Enter rod length: "), scanf("%d", &rod_length) == 1) {
         int cut_counts[MAX_CUT_OPTIONS] = {0};
-        int optimal_value = rod_cut_recursive(rod_length, &rod_data, cut_counts, &cache);  // Fix: Pass cache
+        int optimal_value = rod_cut_recursive(rod_length, &rod_data, cut_counts, &cache);
         print_cut_results(rod_length, optimal_value, cut_counts, &rod_data);
     }
 

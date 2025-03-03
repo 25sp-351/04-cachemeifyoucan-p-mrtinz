@@ -1,4 +1,4 @@
-#include "rod_cut.h"  // Ensure MAX_CUT_OPTIONS is defined
+#include "rod_cut.h"
 #include "cache.h"
 #include <string.h>
 

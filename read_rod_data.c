@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "rod_cut.h"
 
-int read_rod_data(const char *filename, RodCuttingData *rod_data) {  // Fix: Added filename parameter
+int read_rod_data(const char *filename, RodCuttingData *rod_data) {
     FILE *file = fopen(filename, "r");
     if (!file) {
         fprintf(stderr, "Error: Could not open file %s\n", filename);
